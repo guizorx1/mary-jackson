@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mary Jackson</title>
+<meta name="description" content="A história de Mary Jackson, a primeira engenheira negra da NASA. Trabalho escolar para o Dia da Consciência Negra.">
+<meta name="theme-color" content="#0A141C">
+<meta property="og:title" content="Mary Jackson · A primeira engenheira negra da NASA">
+<meta property="og:description" content="Uma história contada em túnel de vento, coragem e números.">
+<meta property="og:image" content="img/windtunnel.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<header class="topbar">
+  <a href="#topo" class="brand">M. W. JACKSON</a>
+  <span class="chapter" id="chapterLabel">Relatório 1921–2005</span>
+</header>
+
+<main id="topo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" data-chapter="Abertura">
+  <canvas id="heroFlow" aria-hidden="true"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow">NACA · NASA Langley · Hampton, Virgínia</p>
+    <h1 class="hero-title">
+      <span class="line"><span>Mary</span></span>
+      <span class="line"><span>Jackson</span></span>
+    </h1>
+    <p class="hero-sub">A primeira engenheira negra da NASA. Ela estudou como o ar se comporta acima da velocidade do som, numa época em que a lei dizia onde ela podia sentar, comer e estudar.</p>
+    <div class="hero-readout" aria-live="polite">
+      <span>Mach <b id="heroMach">2,0</b></span>
+      <span class="hint" id="heroHint">Mova o cursor sobre o túnel para mudar a velocidade</span>
+    </div>
+  </div>
+  <a href="#intro" class="scroll-cue" aria-label="Rolar para começar">
+    <span>Role</span><i></i>
+  </a>
+</section>
+
+<!-- ============ INTRO / STATEMENT ============ -->
+<section class="statement" id="intro" data-chapter="Introdução">
+  <p class="reveal-words">Em 1958, numa Virgínia separada por lei entre brancos e negros, uma mulher negra fez o que diziam que ela não podia fazer. Ela se tornou engenheira da NASA. E passou o resto da vida abrindo a mesma porta para outras pessoas.</p>
+</section>
+
+<!-- ============ ORIGEM ============ -->
+<section class="chapter-sec origem" id="origem" data-chapter="1 · Origem">
+  <div class="wrap split">
+    <figure class="photo-reveal portrait-fig">
+      <div class="clip"><img src="img/portrait.jpg" alt="Retrato em preto e branco de Mary Jackson, de jaqueta clara, olhando para o lado." loading="lazy" width="1367" height="1600"></div>
+      <figcaption><span class="fig">Fig. 1</span> Mary Jackson, retrato oficial, 1979. Foto: NASA</figcaption>
+    </figure>
+    <div class="text-col">
+      <p class="sec-num">Seção 1 · 1921–1951</p>
+      <h2 class="h-display fade-up">Nascida em Hampton</h2>
+      <p class="lead fade-up">Mary Winston nasceu em 9 de abril de 1921, em Hampton, na Virgínia. Ao terminar a escola em 1937, com as notas mais altas, seguiu para o Hampton Institute, uma universidade para estudantes negros.</p>
+      <p class="fade-up">Em 1942 ela se formou com dupla graduação em Matemática e Ciências Físicas. Antes de chegar à ciência aeronáutica, deu aulas de matemática para crianças negras em Maryland, trabalhou como recepcionista, guarda-livros e secretária do Exército dos EUA.</p>
+      <p class="fade-up">Talento não faltava. O que faltava eram portas abertas para uma mulher negra no sul dos Estados Unidos.</p>
+      <dl class="spec fade-up">
+        <div><dt>Nome</dt><dd>Mary Winston Jackson</dd></div>
+        <div><dt>Nascimento</dt><dd>09.04.1921</dd></div>
+        <div><dt>Formação</dt><dd>B.S. Matemática e Ciências Físicas</dd></div>
+        <div><dt>Família</dt><dd>Casada com Levi Jackson; 2 filhos</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEGREGAÇÃO (pinned) ============ -->
+<section class="segregation" id="segregacao" data-chapter="2 · Segregação">
+  <div class="seg-pin">
+    <div class="seg-sign" aria-hidden="true">
+      <span class="sign-a">WHITE</span>
+      <span class="sign-b">COLORED</span>
+    </div>
+    <div class="seg-steps">
+      <div class="seg-step">
+        <p class="sec-num">Seção 2 · As leis Jim Crow</p>
+        <h2 class="h-display">Uma linha no meio de tudo</h2>
+        <p>No sul dos EUA, as chamadas leis Jim Crow separavam pessoas negras e brancas em escolas, ônibus, restaurantes, bebedouros e banheiros. Placas com <em>White</em> e <em>Colored</em> marcavam onde cada um podia estar.</p>
+      </div>
+      <div class="seg-step">
+        <p class="sec-num">1951 · West Area Computing</p>
+        <h2 class="h-display">As “computadoras”</h2>
+        <p>Em 1951 Mary entrou no laboratório Langley da NACA, a agência que depois virou NASA. Ela foi para a West Area Computing, um grupo de matemáticas negras que faziam à mão os cálculos dos engenheiros. Trabalhavam separadas das colegas brancas, com refeitório e banheiros próprios.</p>
+      </div>
+      <div class="seg-step">
+        <p class="sec-num">Liderança</p>
+        <h2 class="h-display">Dorothy Vaughan</h2>
+        <p>A chefe do grupo era Dorothy Vaughan, outra pioneira. Ela lutava para que suas matemáticas recebessem as promoções que mereciam. Foi nesse ambiente que Mary começou a mostrar do que era capaz.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TÚNEL (zoom) ============ -->
+<section class="tunnel" id="tunel" data-chapter="3 · O túnel">
+  <div class="tunnel-pin">
+    <div class="tunnel-frame">
+      <img src="img/windtunnel.jpg" alt="Mary Jackson segurando um modelo de avião dentro de um túnel de vento na NASA Langley." loading="lazy" width="1600" height="1239">
+    </div>
+    <div class="tunnel-text">
+      <p class="sec-num">Seção 3 · 1953</p>
+      <h2 class="h-display">Dentro do túnel supersônico</h2>
+      <p>Em 1953 o engenheiro Kazimierz Czarnecki levou Mary para trabalhar com ele no Túnel de Pressão Supersônico de 4 por 4 pés. Lá, o ar era soprado a velocidades maiores que a do som contra modelos de aviões e foguetes.</p>
+    </div>
+    <p class="tunnel-cap"><span class="fig">Fig. 2</span> Mary Jackson com um modelo no túnel de vento da NASA Langley, 1977. Foto: NASA</p>
+  </div>
+</section>
+
+<!-- ============ PETIÇÃO (paper section) ============ -->
+<section class="petition" id="peticao" data-chapter="4 · A petição">
+  <div class="wrap">
+    <p class="sec-num dark">Seção 4 · O obstáculo</p>
+    <h2 class="h-display big dark fade-up">Para ser engenheira, ela precisou de permissão para entrar numa sala de aula.</h2>
+    <div class="petition-grid">
+      <div class="petition-body">
+        <p class="fade-up">Czarnecki percebeu o talento de Mary e a incentivou a fazer o curso de formação para engenheiros. Só havia um problema: as aulas de pós-graduação da Universidade da Virgínia aconteciam dentro da Hampton High School, uma escola só para brancos.</p>
+        <p class="fade-up">Mary fez um pedido formal à cidade de Hampton para poder estudar ali. Conseguiu. Assistiu às aulas, completou os cursos e, em 1958, foi promovida a engenheira aeroespacial.</p>
+        <p class="fade-up"><strong>Ela foi a primeira mulher negra engenheira da NASA.</strong></p>
+      </div>
+      <blockquote class="petition-quote fade-up">
+        <p>“Eu não posso mudar a cor da minha pele. Então não tenho escolha a não ser ser a primeira.”</p>
+        <cite>Fala da personagem Mary Jackson no filme <em>Estrelas Além do Tempo</em> (2016), ao pedir ao juiz para estudar na escola.</cite>
+      </blockquote>
+    </div>
+    <div class="stamp fade-up" aria-hidden="true"><span>Aprovado</span><small>Hampton · 1958</small></div>
+  </div>
+</section>
+
+<!-- ============ LAB INTERATIVO ============ -->
+<section class="lab" id="laboratorio" data-chapter="5 · Laboratório">
+  <div class="wrap">
+    <div class="lab-head">
+      <p class="sec-num">Seção 5 · Experimente</p>
+      <h2 class="h-display">O que Mary estudava</h2>
+      <p class="lab-intro">Seu primeiro relatório técnico, de 1958, estudou como o ângulo do nariz de um cone e o número de Mach mudam o fluxo de ar ao redor dele. Acima da velocidade do som, o ar não consegue “avisar” o objeto que está chegando e se comprime de repente numa <strong>onda de choque</strong>. Mexa nos controles e veja.</p>
+    </div>
+    <div class="lab-rig">
+      <div class="lab-screen">
+        <canvas id="labFlow" aria-label="Simulação de fluxo de ar supersônico em volta de um cone"></canvas>
+        <div class="lab-hud">
+          <span>TÚNEL 4×4 FT · SIMULAÇÃO</span>
+          <span id="labState">CHOQUE OBLÍQUO</span>
+        </div>
+      </div>
+      <div class="lab-controls">
+        <div class="ctrl">
+          <label for="machRange">Número de Mach <output id="machOut">2,0</output></label>
+          <input type="range" id="machRange" min="1.2" max="3.5" step="0.05" value="2">
+          <small>1,0 = velocidade do som (≈ 1.235 km/h ao nível do mar)</small>
+        </div>
+        <div class="ctrl">
+          <label for="angleRange">Meio-ângulo do nariz <output id="angleOut">12°</output></label>
+          <input type="range" id="angleRange" min="4" max="35" step="1" value="12">
+          <small>Narizes mais pontudos cortam o ar com choques mais fracos</small>
+        </div>
+        <dl class="readouts">
+          <div><dt>Ângulo da onda de choque</dt><dd id="betaOut">—</dd></div>
+          <div><dt>Velocidade</dt><dd id="kmhOut">—</dd></div>
+        </dl>
+        <p class="ref"><span class="fig">Ref.</span> Czarnecki, K. R. &amp; Jackson, M. W. <em>Effects of Nose Angle and Mach Number on Transition on Cones at Supersonic Speeds.</em> NACA TN 4388, 1958.</p>
+        <p class="note">Simulação simplificada para fins didáticos (modelo de choque oblíquo, γ = 1,4).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NÚMEROS ============ -->
+<section class="numbers" id="numeros" data-chapter="6 · Em números">
+  <div class="wrap">
+    <p class="sec-num">Seção 6 · Em números</p>
+    <div class="num-grid">
+      <div class="num"><b data-count="34">34</b><span>anos na NACA/NASA, de 1951 a 1985</span></div>
+      <div class="num"><b data-count="12" data-prefix="≈">≈12</b><span>relatórios técnicos publicados como autora ou coautora</span></div>
+      <div class="num"><b data-count="30" data-suffix="+">30+</b><span>anos como líder de escoteiras, ensinando ciência a meninas</span></div>
+      <div class="num"><b data-count="1" data-suffix="ª">1ª</b><span>engenheira negra da história da NASA</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMELINE horizontal ============ -->
+<section class="timeline" id="linha-do-tempo" data-chapter="7 · Linha do tempo">
+  <div class="tl-pin">
+    <div class="tl-head wrap">
+      <p class="sec-num">Seção 7 · Linha do tempo</p>
+      <h2 class="h-display">Uma vida em 11 datas</h2>
+    </div>
+    <div class="tl-track" id="tlTrack">
+      <article class="tl-item"><time>1921</time><p>Nasce em Hampton, Virgínia, no dia 9 de abril.</p></article>
+      <article class="tl-item"><time>1942</time><p>Forma-se em Matemática e Ciências Físicas no Hampton Institute.</p></article>
+      <article class="tl-item"><time>1951</time><p>Entra na NACA como “computadora” no grupo segregado West Area Computing.</p></article>
+      <article class="tl-item"><time>1953</time><p>Começa a trabalhar com Kazimierz Czarnecki no túnel de vento supersônico.</p></article>
+      <article class="tl-item hl"><time>1958</time><p>Torna-se a primeira engenheira negra da NASA e publica seu primeiro relatório.</p></article>
+      <article class="tl-item"><time>1979</time><p>Deixa a engenharia para dirigir o Programa Federal para Mulheres em Langley.</p></article>
+      <article class="tl-item"><time>1985</time><p>Aposenta-se depois de 34 anos de carreira.</p></article>
+      <article class="tl-item"><time>2005</time><p>Morre em 11 de fevereiro, aos 83 anos.</p></article>
+      <article class="tl-item"><time>2016</time><p>Livro e filme <em>Estrelas Além do Tempo</em> contam sua história ao mundo. Janelle Monáe a interpreta.</p></article>
+      <article class="tl-item"><time>2019</time><p>Recebe, após a morte, a Medalha de Ouro do Congresso dos EUA.</p></article>
+      <article class="tl-item hl"><time>2021</time><p>A sede da NASA em Washington passa a se chamar Mary W. Jackson NASA Headquarters.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABRINDO PORTAS ============ -->
+<section class="chapter-sec doors" id="portas" data-chapter="8 · Abrindo portas">
+  <div class="wrap split reverse">
+    <div class="text-col">
+      <p class="sec-num">Seção 8 · 1979</p>
+      <h2 class="h-display fade-up">Ela escolheu abrir a porta</h2>
+      <p class="lead fade-up">Depois de anos como engenheira, Mary percebeu que mulheres e pessoas negras continuavam sem conseguir promoções. Em 1979 ela tomou uma decisão rara: deixou a engenharia e aceitou um cargo de nível mais baixo para comandar o Programa Federal para Mulheres em Langley.</p>
+      <p class="fade-up">Ali ela ajudou mulheres e minorias a conseguir cargos de gestão e de engenharia. Fora do trabalho, ajudou crianças negras a construir um túnel de vento em miniatura para que elas vissem que a ciência também era delas.</p>
+      <blockquote class="pull fade-up">
+        <p>“Temos que fazer algo assim para despertar o interesse delas pela ciência. Às vezes elas não sabem quantos cientistas negros existem, e nem conhecem as oportunidades de carreira até que seja tarde demais.”</p>
+        <cite>Mary Jackson, anos 1970, em jornal local, sobre o túnel de vento que construiu com crianças</cite>
+      </blockquote>
+    </div>
+    <figure class="photo-reveal">
+      <div class="clip"><img src="img/working.jpg" alt="Mary Jackson sentada diante de painéis de instrumentos, lendo um caderno de dados." loading="lazy" width="1600" height="1296"></div>
+      <figcaption><span class="fig">Fig. 3</span> Mary Jackson no laboratório da NASA Langley, c. 1977–1980. Foto: NASA</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ LEGADO ============ -->
+<section class="legacy" id="legado" data-chapter="9 · Legado">
+  <div class="wrap">
+    <p class="sec-num">Seção 9 · Legado</p>
+    <h2 class="h-display big fade-up">O nome dela agora está na porta da frente.</h2>
+    <p class="lead fade-up">Em 2020 a NASA anunciou que sua sede em Washington levaria o nome de Mary W. Jackson. Em fevereiro de 2021 as letras foram instaladas na fachada. Em 2024, seu retrato foi inaugurado no prédio.</p>
+  </div>
+  <div class="legacy-gallery">
+    <figure class="lg lg-a"><div class="clip"><img src="img/hq.jpg" alt="Prédio da sede da NASA em Washington num dia de céu azul." loading="lazy" width="1600" height="1200"></div><figcaption><span class="fig">Fig. 4</span> Mary W. Jackson NASA Headquarters, Washington. Foto: NASA</figcaption></figure>
+    <figure class="lg lg-b"><div class="clip"><img src="img/sign.jpg" alt="Mãos instalando as letras do nome de Mary Jackson na fachada da sede da NASA." loading="lazy" width="1600" height="1066"></div><figcaption><span class="fig">Fig. 5</span> Instalação do letreiro, 25 fev. 2021. Foto: NASA</figcaption></figure>
+    <figure class="lg lg-c"><div class="clip"><img src="img/unveil.jpg" alt="Retrato emoldurado de Mary Jackson exposto na parede da sede da NASA." loading="lazy" width="1600" height="1104"></div><figcaption><span class="fig">Fig. 6</span> Retrato inaugurado na sede, dez. 2024. Foto: NASA</figcaption></figure>
+  </div>
+</section>
+
+<!-- ============ CONSCIÊNCIA NEGRA ============ -->
+<section class="awareness" id="consciencia" data-chapter="10 · Consciência Negra">
+  <div class="wrap">
+    <p class="sec-num">Seção 10 · 20 de novembro</p>
+    <h2 class="h-display big fade-up">Por que falar de Mary Jackson no Dia da Consciência Negra?</h2>
+    <div class="aw-grid">
+      <div class="aw-card fade-up">
+        <h3>Memória</h3>
+        <p>O 20 de novembro lembra Zumbi dos Palmares e a resistência do povo negro no Brasil. Por décadas, a história de Mary e de suas colegas ficou fora dos livros. Lembrar é uma forma de reparação.</p>
+      </div>
+      <div class="aw-card fade-up">
+        <h3>Representatividade</h3>
+        <p>Mary sabia que uma criança só sonha com o que consegue imaginar. Por isso dedicou anos a mostrar para jovens negros que ciência e engenharia também eram lugares para eles.</p>
+      </div>
+      <div class="aw-card fade-up">
+        <h3>Racismo estrutural</h3>
+        <p>O obstáculo de Mary não era falta de capacidade. Era um sistema de leis e costumes feito para excluir. Entender isso ajuda a reconhecer as barreiras que ainda existem hoje, aqui e lá fora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="quiz" id="quiz" data-chapter="11 · Quiz">
+  <div class="wrap narrow">
+    <p class="sec-num">Seção 11 · Teste o que você aprendeu</p>
+    <h2 class="h-display">Quiz rápido</h2>
+    <div class="quiz-box" id="quizBox">
+      <p class="q-count" id="qCount">Pergunta 1 de 4</p>
+      <h3 class="q-text" id="qText">Carregando…</h3>
+      <div class="q-options" id="qOptions"></div>
+      <p class="q-feedback" id="qFeedback" aria-live="polite"></p>
+      <button type="button" class="q-next" id="qNext" hidden>Próxima pergunta</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" data-chapter="Créditos">
+  <div class="wrap">
+    <p class="footer-big">“A primeira” só existe para que outras venham depois.</p>
+    <div class="footer-grid">
+      <div>
+        <h4>Trabalho escolar</h4>
+        <p>Dia da Consciência Negra · 2026</p>
+        <p class="authors" id="autores">Turma: 2 Administração</p>
+      </div>
+      <div>
+        <h4>Fontes</h4>
+        <ul>
+          <li>NASA · Biografia oficial de Mary W. Jackson</li>
+          <li>Margot Lee Shetterly · <em>Estrelas Além do Tempo</em> (2016)</li>
+          <li>NACA Technical Note 4388 (1958)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Imagens</h4>
+        <p>Todas as fotos: NASA, domínio público, via Wikimedia Commons.</p>
+      </div>
+    </div>
+    <a href="#topo" class="to-top">Voltar ao início ↑</a>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
