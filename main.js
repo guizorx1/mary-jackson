@@ -36,7 +36,7 @@
       this.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       const n = Math.min(this.o.max, Math.round(this.w * this.h / this.o.density));
       this.p = Array.from({ length: n }, () => this.spawn(Math.random() * this.w));
-      this.ctx.fillStyle = "#060D13"; this.ctx.fillRect(0, 0, this.w, this.h);
+      this.ctx.fillStyle = "#1C0C15"; this.ctx.fillRect(0, 0, this.w, this.h);
     }
     spawn(x) {
       return { x, y: Math.random() * this.h, px: x, py: 0, a: 0, hit: false, v: 0.75 + Math.random() * 0.5 };
@@ -70,18 +70,18 @@
     }
     draw() {
       const ctx = this.ctx, { nx, cy, td } = this.geom();
-      ctx.fillStyle = "rgba(6,13,19,0.2)"; ctx.fillRect(0, 0, this.w, this.h);
+      ctx.fillStyle = "rgba(28,12,21,0.2)"; ctx.fillRect(0, 0, this.w, this.h);
       ctx.lineWidth = 1.2; ctx.lineCap = "round";
-      ctx.beginPath(); ctx.strokeStyle = "rgba(190,208,220,0.55)";
+      ctx.beginPath(); ctx.strokeStyle = "rgba(250,222,232,0.5)";
       for (const q of this.p) if (!q.hit) { ctx.moveTo(q.px, q.py); ctx.lineTo(q.x, q.y); }
       ctx.stroke();
-      ctx.beginPath(); ctx.strokeStyle = "rgba(233,169,60,0.75)";
+      ctx.beginPath(); ctx.strokeStyle = "rgba(245,168,192,0.85)";
       for (const q of this.p) if (q.hit) { ctx.moveTo(q.px, q.py); ctx.lineTo(q.x, q.y); }
       ctx.stroke();
       // shock wave (schlieren glow)
       ctx.save();
-      ctx.shadowColor = "rgba(233,169,60,0.9)"; ctx.shadowBlur = 14;
-      ctx.strokeStyle = "rgba(255,236,200,0.55)"; ctx.lineWidth = 1.6; ctx.beginPath();
+      ctx.shadowColor = "rgba(245,140,175,0.95)"; ctx.shadowBlur = 14;
+      ctx.strokeStyle = "rgba(255,225,236,0.6)"; ctx.lineWidth = 1.6; ctx.beginPath();
       if (this.beta) {
         const L = this.w - nx, tb = Math.tan(this.beta);
         ctx.moveTo(nx + L, cy - L * tb); ctx.lineTo(nx, cy); ctx.lineTo(nx + L, cy + L * tb);
@@ -94,9 +94,9 @@
       const L = this.w - nx + 20;
       ctx.beginPath(); ctx.moveTo(nx, cy); ctx.lineTo(nx + L, cy - L * td); ctx.lineTo(nx + L, cy + L * td); ctx.closePath();
       const g = ctx.createLinearGradient(0, cy - L * td, 0, cy + L * td);
-      g.addColorStop(0, "#2A3B47"); g.addColorStop(0.5, "#16232D"); g.addColorStop(1, "#0C161E");
+      g.addColorStop(0, "#5A2E45"); g.addColorStop(0.5, "#38192A"); g.addColorStop(1, "#200E18");
       ctx.fillStyle = g; ctx.fill();
-      ctx.strokeStyle = "rgba(220,228,234,0.7)"; ctx.lineWidth = 1; ctx.stroke();
+      ctx.strokeStyle = "rgba(250,222,232,0.75)"; ctx.lineWidth = 1; ctx.stroke();
     }
     frame = (t) => {
       if (!this.running) return;
